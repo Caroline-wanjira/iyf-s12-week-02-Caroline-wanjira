@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background: #f9fafb;
+}
+
+.site-header,
+.site-footer {
+  padding: 1rem 1.5rem;
+  background: #1f2937;
+  color: #fff;
+}
+
+.site-header ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+
+.site-header a {
+  color: #93c5fd;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ---------- Exercise 1: Photo Gallery ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #d1d5db;
+}
+
+.gallery figcaption {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* ---------- Exercise 2: Magazine Layout ---------- */
+.magazine {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar content"
+    "footer  footer";
+  gap: 16px;
+}
+
+.magazine-header  { grid-area: header; }
+.magazine-sidebar { grid-area: sidebar; }
+.magazine-content { grid-area: content; }
+.magazine-footer  { grid-area: footer; }
+
+.magazine > * {
+  padding: 1rem;
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.magazine h3,
+.magazine h4,
+.magazine p {
+  margin: 0 0 0.5rem;
+}
+
+/* ---------- Exercise 3: Project Cards ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .magazine {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+  }
+}
