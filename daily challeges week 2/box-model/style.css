@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 24px;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin: 32px 0 12px;
+}
+
+/* Exercise 1: Box Model Visualization */
+.demo-box {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.content-box {
+  background-color: lightblue;
+}
+
+.padding-box {
+  background-color: lightblue;
+  padding: 30px;
+}
+
+.border-box {
+  background-color: lightblue;
+  padding: 10px;
+  border: 5px solid navy;
+}
+
+.margin-box {
+  background-color: lightblue;
+  padding: 10px;
+  border: 2px solid darkgreen;
+  margin-bottom: 50px;
+}
+
+/* Exercise 2: Debug the Layout */
+.broken-box {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  background-color: #ffd9d9;
+}
+
+/* Exercise 3: Card Component */
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0f5c6e;
+  color: white;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0a4352;
+}
