@@ -30,4 +30,4 @@ The challenge I experienced was understanding how flexbox box properties work to
 i solved this by adjusting spacing and alignment to achieve desired layouts.
 
 ## Live Demo 
-[My Portfolio](https://your-deployed-url.com)
+[Smart Money Tips](https://caroline-wanjira.github.io/iyf-s12-week-02-Caroline-wanjira)
