@@ -1,4 +1,4 @@
-# Week 2: iyf-s12-week-o2-Caroline-wanjira
+# Week 2: iyf-s12-week-02-Caroline-wanjira
 
 ## Author
 - **Name:** Caroline Wanjira Wanjiru
